@@ -1,0 +1,13 @@
+{
+	"routes": {
+	    "/static/**": "/static/",
+	    "/favicon.ico": "favicon.ico",
+	    "/**": "index.html"
+	},
+	"clean_urls": true,
+	"proxies": {
+		"/api/": {
+			"origin": "http://tabbit-react.herokuapp.com/api/"
+		}
+	}
+}
